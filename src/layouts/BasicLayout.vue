@@ -1,20 +1,22 @@
 <template>
-  <div class="basic-layout">
-      <Menu />
-      <div class="ui container">
-        <!-- En <slot /> está el contenido que envolvemos dentro de las etiquetas BasicLayout en Payrolls.vue -->
-          <slot />
-      </div>
+  <div class="container-fluid">
+    <div class="row">
+      <LeftMenu />
+        <slot />
+      <RightMenu />
+    </div>
   </div>
 </template>
 
 <script>
-import Menu from '../components/Menu.vue';
+import RightMenu from '../components/RightMenu.vue';
+import LeftMenu from '../components/LeftMenu.vue';
 
 export default {
   name: 'BasicLayout',
   components: {
-    Menu,
+    RightMenu,
+    LeftMenu
   }
 }
 </script>

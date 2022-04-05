@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Payrolls from '../views/Payrolls.vue';
+import HomeBank from '../views/HomeBank.vue';
 import Account from '../views/Account.vue';
 
 const routes = [
   {
     path: '/',
-    name: 'Payrolls',
-    component: Payrolls,
+    name: 'Overview',
+    component: HomeBank,
   },
   {
     path: '/account',

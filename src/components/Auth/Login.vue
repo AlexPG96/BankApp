@@ -11,6 +11,10 @@
             <button type="submit" class="ui button positive" :class="{loading}">Entrar</button>
         </form>
         <p @click="changeForm">Crear nueva cuenta</p>
+
+        <button @click="googleSignIn">
+            Sign In with Google
+        </button>
   </div>
 </template>
 
@@ -18,6 +22,7 @@
 import { ref } from 'vue';
 import * as Yup from 'yup';
 import { auth } from '../../utils/firebase';
+import firebase from "firebase";
 
 export default {
     name: "Login",
@@ -55,9 +60,26 @@ export default {
             }
             loading.value = false;
         };
+
+        const googleSignIn = async () => {
+            let provider = new firebase.auth.GoogleAuthProvider();
+            firebase
+            .auth()
+            .signInWithPopup(provider)
+            .then((result) => {
+            let token = result.credential.accessToken;
+            let user = result.user;
+                console.log(token) // Token
+                console.log(user) // User that was authenticated
+            })
+            .catch((err) => {
+            console.log(err); // This will give you all the information needed to further debug any errors
+            });
+        };
         return {
             formData,
             onLogin,
+            googleSignIn,
             schemaForm,
             formError,
             loading,
