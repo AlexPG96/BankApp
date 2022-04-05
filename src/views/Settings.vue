@@ -28,7 +28,7 @@ import ChangeEmail from '../components/Account/ChangeEmail.vue';
 import ChangePassword from '../components/Account/ChangePassword.vue';
 
 export default {
-    name: 'Account',
+    name: 'Settings',
     components: {
         BasicLayout,
         ChangeName,

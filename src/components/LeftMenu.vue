@@ -13,7 +13,7 @@
                     <i class="me-2 bi bi-person"></i>
                     <span class="item">Account</span>
                 </router-link>
-                <router-link to="/account" class="containerItem p-3">
+                <router-link to="/overview" class="containerItem p-3">
                     <i class="me-2 bi bi-bar-chart"></i>
                     <span class="item">Overview</span>
                 </router-link>
@@ -33,7 +33,7 @@
                     <i class="me-2 bi bi-credit-card"></i>
                     <span class="item">Cards</span>
                 </router-link>
-                <router-link to="/account" class="containerItem p-3">
+                <router-link to="/settings" class="containerItem p-3">
                     <i class="me-2 bi bi-gear"></i>
                     <span class="item">Settings</span>
                 </router-link>

@@ -13,7 +13,7 @@
                     </a>
 
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="/account">Mi Cuenta</a></li>
+                        <li><a class="dropdown-item" href="/">Mi Cuenta</a></li>
                         <li><a class="dropdown-item" href="#">Idioma</a></li>
                         <li><a class="dropdown-item" @click="logOut">Cerrar sesión</a></li>
                     </ul>
