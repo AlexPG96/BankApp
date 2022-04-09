@@ -1,20 +1,9 @@
 <template>
     <BasicLayout class="account">
         <div class="col-7">
-            <h1>Bienvenido a los ajustes</h1>
-
-            <div class="account__section">
-                <p class="title">Cambiar nombre <span v-if="user.displayName">({{ user.displayName }})</span></p>
-                <ChangeName />
-            </div>
-            <div class="account__section">
-                <p class="title">Cambiar email <span>({{ user.email }})</span></p>
-                <ChangeEmail />
-            </div>
-            <div class="account__section">
-                <p class="title">Cambiar contraseña</p>
-                <ChangePassword />
-            </div>
+            <TopBar />
+            <AccountCurrentBlance />
+            <LastMovements />
         </div>
     </BasicLayout>
 </template>
@@ -23,17 +12,17 @@
 import { computed } from 'vue';
 import { useStore } from 'vuex';
 import BasicLayout from '../layouts/BasicLayout.vue';
-import ChangeName from '../components/Account/ChangeName.vue';
-import ChangeEmail from '../components/Account/ChangeEmail.vue';
-import ChangePassword from '../components/Account/ChangePassword.vue';
+import TopBar from '../components/TopBar.vue';
+import AccountCurrentBlance from '../components/AccountCurrentBlance.vue';
+import LastMovements from '../components/LastMovements.vue';
 
 export default {
     name: 'Account',
     components: {
         BasicLayout,
-        ChangeName,
-        ChangeEmail,
-        ChangePassword,
+        TopBar,
+        AccountCurrentBlance,
+        LastMovements
     },
     setup() {
         const store = useStore();

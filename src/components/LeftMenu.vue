@@ -3,7 +3,7 @@
         <div class="row borderBottom">
             <div class="col-12 p-3">
                 <div class="p-3">
-                    <router-link class="item" to="/"><img src="../assets/Ginko.png" alt="Logo"> </router-link>
+                    <router-link class="item" to="/overview"><img src="../assets/Ginko.png" alt="Logo"> </router-link>
                 </div>
             </div>
         </div>
@@ -17,19 +17,19 @@
                     <i class="me-2 bi bi-bar-chart"></i>
                     <span class="item">Overview</span>
                 </router-link>
-                <router-link to="/account" class="containerItem p-3">
+                <router-link to="/send" class="containerItem p-3">
                     <i class="me-2 bi bi-arrow-up-right"></i>
                     <span class="item">Send</span>
                 </router-link>
-                <router-link to="/account" class="containerItem p-3">
+                <router-link to="/receive" class="containerItem p-3">
                     <i class="me-2 bi bi-arrow-down-left"></i>
-                    <span class="item">Reveive</span>
+                    <span class="item">Receive</span>
                 </router-link>
                 <router-link to="/account" class="containerItem p-3">
                     <i class="me-2 bi bi-arrow-left-right"></i>
                     <span class="item">Swap</span>
                 </router-link>
-                <router-link to="/account" class="containerItem p-3">
+                <router-link to="/cards" class="containerItem p-3">
                     <i class="me-2 bi bi-credit-card"></i>
                     <span class="item">Cards</span>
                 </router-link>
