@@ -2,15 +2,15 @@
   <div class="row p-3">
     <div class="col-12">
         <div class="d-flex justify-content-around align-items-center">
-            <div class="icon">
-                <i class="bi bi-arrow-left-circle-fill"></i>
+            <div class="iconContainer" :style="{background: color, boxShadow: '0 0 10px 2px' + shadowColor}">
+                <i :class="icon"></i>
+            </div>
+            <div class="movementsInfo">
+                <div class="movementTitle">{{movementTitle}}</div>
+                <small class="movementDate">{{movementDate}}</small>
             </div>
             <div>
-                <div>Texto de la transacción</div>
-                <small>10 Feb 2022 at 10:20 pm</small>
-            </div>
-            <div>
-                <span>+$12.959,00</span>
+                <span>{{movementMoney}}</span>
             </div>
         </div>
       </div>
@@ -20,14 +20,42 @@
 <script>
 export default {
     name: 'SingularLastMovement',
+    props: {
+        icon: String,
+        color: String,
+        shadowColor: String,
+        movementTitle: String,
+        movementDate: String,
+        movementMoney: String,
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-.icon {
+.iconContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
 
     i {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+    }
+}
+
+.movementsInfo {
+    text-align: center;
+
+    .movementTitle {
+        font-size: 1.2rem;
+    }
+
+    .movementDate {
+        font-size: .8rem;
+        color: #3F4540;
     }
 }
 </style>

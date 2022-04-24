@@ -27,7 +27,7 @@ export default {
 
 .infiniteScroll {
     overflow: auto;
-    height: 500px;
+    height: 450px;
     overflow-x: hidden;
     scrollbar-width: thin;
     scrollbar-color: #aeaeae transparent;

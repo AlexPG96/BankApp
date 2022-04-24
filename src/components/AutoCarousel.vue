@@ -3,7 +3,7 @@
         <ul class="carousel">
             <li class="d-flex align-items-center" :class="{'ms-5': secondCarousel, 'me-1': !secondCarousel}" v-for="(user, index) in users" :key="index">
                 <div class="iconContainer" style="background: black;">
-                    <img :src="user.logo" alt="" width="60" height="60">
+                    <img :src="require(`../assets/${user.logo}`)" alt="" width="60" height="60">
                 </div>
                 <div class="carouselItem">
                     <div class="d-flex flex-column">
@@ -16,7 +16,7 @@
         <ul class="carousel">
             <li class="d-flex align-items-center" :class="{'ms-5': secondCarousel, 'me-1': !secondCarousel}" v-for="(user, index) in users" :key="index">
                 <div class="iconContainer" style="background: black;">
-                    <img :src="user.logo" alt="" width="60" height="60">
+                    <img :src="require(`../assets/${user.logo}`)" alt="" width="60" height="60">
                 </div>
                 <div class="carouselItem">
                     <div class="d-flex flex-column">
@@ -61,7 +61,7 @@ export default {
             margin-right: 15px;
 
             img {
-
+                border-radius: 50%;
             }
         }
         .carouselItem {
@@ -73,7 +73,7 @@ export default {
         align-items: center;
         justify-content: start;
         box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.05);
-        background-color: #ffffff;
+        background-color: #1B1B1B;
         border-radius: 15px;
         }
     }

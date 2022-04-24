@@ -1,16 +1,18 @@
 <template>
-  <div class="row py-3 px-3">
+  <div class="row m-3">
       <div class="col-12 rencentlyRow">
-          <div class="d-flex justify-content-between">
-            <h3>Recently</h3>
-            <div>
-                <select class="form-select" aria-label="Default select example">
-                    <option v-for="(filter, index) in filters" :key="index" :value="filter">{{filter}}</option>
-                </select>
+          <div class="borderGradient">
+            <div class="d-flex justify-content-between">
+                <h3>Recently</h3>
+                <div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option v-for="(filter, index) in filters" :key="index" :value="filter">{{filter}}</option>
+                    </select>
+                </div>
             </div>
+            <AutoCarousel :users="firstUsers" :secondCarousel="false"/>
+            <AutoCarousel class="ms-5" :users="secondUsers" :secondCarousel="true" />
           </div>
-          <AutoCarousel :users="firstUsers" :secondCarousel="false"/>
-          <AutoCarousel class="ms-5" :users="secondUsers" :secondCarousel="true" />
       </div>
   </div>
 </template>
@@ -28,121 +30,121 @@ export default {
         const firstUsers = [
             {
                 id: 1,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 2,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 3,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 4,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 5,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 6,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 7,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 8,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 9,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 10,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 11,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 12,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 13,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 14,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 15,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 16,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 17,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 18,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 19,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
             {
                 id: 20,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Jacob',
                 accountNumber: '5689 ****'
             },
@@ -151,121 +153,121 @@ export default {
         const secondUsers = [
             {
                 id: 1,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 2,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 3,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 4,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 5,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 6,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 7,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 8,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 9,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 10,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 11,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 12,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 13,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 14,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 15,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 16,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 17,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 18,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 19,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
             {
                 id: 20,
-                logo: 'https://media0.giphy.com/media/wbzCLsyT1VjZ6/200w.gif?cid=82a1493b8xcktn1lskowq4rvi1zont05iv252zndcs4wjqf5&rid=200w.gif',
+                logo: 'icon.jpg',
                 name: 'Test',
                 accountNumber: '5689 ****'
             },
@@ -283,8 +285,21 @@ export default {
 <style lang="scss" scoped>
 
 .rencentlyRow {
-    border: 1px solid red;
+    /* border: 1px solid red;
     border-radius: 15px;
-    padding: 15px;
+    padding: 15px; */
+    max-width: 100%;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(270deg, rgba(46,184,165,1) 0%, rgba(75,207,91,1) 100%);
+    padding: 1px;
+    border-radius: 15px;
+    margin: 0px auto;
+
+    .borderGradient {
+        background: #020201;
+        padding: 2rem;
+        border-radius: 15px;
+    }
 }
 </style>

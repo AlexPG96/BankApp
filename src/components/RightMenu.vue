@@ -43,11 +43,11 @@
             </div>
             <div class="col-12">
                 <div class="chartist d-flex justify-content-around flex-wrap-reverse">
-                    <Chart percentage="50%" />
-                    <Chart percentage="60%" />
-                    <Chart percentage="80%" />
-                    <Chart percentage="90%" />
-                    <Chart percentage="30%" />
+                    <Chart percentage="50%" :currentMonth="false" />
+                    <Chart percentage="60%" :currentMonth="false" />
+                    <Chart percentage="80%" :currentMonth="true" />
+                    <Chart percentage="90%" :currentMonth="false" />
+                    <Chart percentage="30%" :currentMonth="false" />
                 </div>
             </div>
         </div>
@@ -89,11 +89,15 @@ export default {
 <style lang="scss" scoped>
 
 .borderLeft {
-    border-left: 1px solid #cecece;
+    border-left: 1px solid #3F4540;
 }
 .borderBottom {
-    border-bottom: 1px solid #cecece;
+    border-bottom: 1px solid #3F4540;
     margin-top: 30px;
+}
+
+hr {
+    background: #FFF;
 }
 
 .chartist {

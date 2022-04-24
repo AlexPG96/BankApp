@@ -23,4 +23,9 @@ export default {
 
 <style>
 
+.container-fluid {
+  background: #020201;
+  color: #fff;
+}
+
 </style>

@@ -55,8 +55,9 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" @click="clear('C')">Send money</button>
+                <div class="containerBtn">
+                    <button type="button" class="customBtn" data-bs-dismiss="modal" @click="clear('C')">Send</button>
+                </div>
             </div>
             </div>
         </div>
@@ -124,15 +125,44 @@ export default {
     }
 }
 
+.modal-header { 
+    background: #020201;
+    color: #fff;
+    border-bottom: 1px solid #3F4540;
+
+}
 .modal-body {
-    background: #000;
+    background: #020201;
+
+    .contactCard {
+        background-color: #1B1B1B;
+        border-radius: 15px;
+    .contactIcon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+    }
+
+    .contactInfo {
+
+        p {
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        small {
+            color: #3F4540;
+        }
+    }
+}
 
     .viewer {
         text-align: center;
         color: #fff;
         font-size: 2.5rem;
         font-weight: 700;
-        margin-right: 10px;
+        margin-left: 10px;
     }
     .calculator {
         display: grid;
@@ -151,6 +181,7 @@ export default {
             border: none;
             color: #fff;
             font-weight: 700;
+            font-size: 1.4rem;
     
             &:hover {
                 color: #1B1B1B;
@@ -158,6 +189,26 @@ export default {
             }
         }
     
+    }
+}
+
+.modal-footer { 
+    background: #020201;
+    color: #fff;
+    border-top: 1px solid #3F4540;
+
+    .containerBtn {
+        width: 100%;
+        
+        .customBtn {
+            width: 100%;
+            color: #1B1B1B;
+            background: linear-gradient(270deg, rgba(46,184,165,1) 0%, rgba(75,207,91,1) 100%);
+            border: none;
+            border-radius: 15px;
+            padding: 15px;
+            font-weight: 700;
+        }
     }
 }
 </style>

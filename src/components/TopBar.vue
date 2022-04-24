@@ -3,12 +3,12 @@
         <div class="col-12 p-3">
             <div class="d-flex justify-content-between">
 
-                <div>
+                <div class="userWelcome">
                     <p class="m-0">Hi, {{ user.displayName}}</p>
                     <h2>Welcome Back</h2>
                 </div>
                 
-                <div class="d-flex justify-content-around align-items-center">
+                <div class="d-flex justify-content-around align-items-center searchBar">
                     <span class="m-2"><i class="bi bi-search"></i></span>
                     <input type="text" class="form-control" placeholder="Search here...">
                 </div>
@@ -42,6 +42,46 @@ export default {
 
 <style lang="scss" scoped>
 .gridBorder {
-  border-bottom: 1px solid #cecece;
+  border-bottom: 1px solid #3F4540;
+
+  .userWelcome {
+    
+    p {
+      color: #3F4540;
+    }
+
+    h2 {
+      color: #fff;
+    }
+  }
+
+  .searchBar {
+
+    span {
+      color: #3F4540;
+    }
+
+    input {
+      background-color: #020201;;
+      border: 1px solid #020201;;
+      border: none;
+      color: #3F4540;
+
+      &:placeholder {
+        color: #3F4540;
+      }
+
+      &::-webkit-input-placeholder { 
+        color: #3F4540; 
+      } /* WebKit */
+      &::-moz-placeholder { 
+        color: #3F4540; 
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 .25rem rgba(63, 69, 64, .25);
+      }
+    }
+  }
 }
 </style>
