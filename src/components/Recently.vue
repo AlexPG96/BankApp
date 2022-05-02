@@ -3,11 +3,11 @@
       <div class="col-12 rencentlyRow">
           <div class="borderGradient">
             <div class="d-flex justify-content-between">
-                <h3>Recently</h3>
-                <div>
-                    <select class="form-select" aria-label="Default select example">
-                        <option v-for="(filter, index) in filters" :key="index" :value="filter">{{filter}}</option>
-                    </select>
+                <h3 class="col-10">Recently</h3>
+                <div class="col-2">
+                    <Select 
+                    :options="filters"
+                    />
                 </div>
             </div>
             <AutoCarousel :users="firstUsers" :secondCarousel="false"/>
@@ -19,10 +19,12 @@
 
 <script>
 import AutoCarousel from "../components/AutoCarousel.vue";
+import Select from "../components/Select.vue";
 export default {
     name: "Recently",
     components: {
         AutoCarousel,
+        Select
 
     },
     setup() {

@@ -21,10 +21,10 @@
   </div>
   <div class="infiniteScroll">
     <ProgressTransactions icon="bi bi-arrow-down-left" color="#9280FD" shadowColor="#9280FD" background="#9280FD" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="+$12.959,00" percentage="75" />
-    <ProgressTransactions icon="bi bi-arrow-up-right" color="#3C71FC" shadowColor="#3C71FC" background="#3C71FC" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="+$12.959,00" percentage="45" />
+    <ProgressTransactions icon="bi bi-arrow-up-right" color="#3C71FC" shadowColor="#3C71FC" background="#3C71FC" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="-$12.959,00" percentage="45" />
     <ProgressTransactions icon="bi bi-calendar-event" color="#50D3FC" shadowColor="#50D3FC" background="#50D3FC" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="+$12.959,00" percentage="30" />
     <ProgressTransactions icon="bi bi-arrow-down-left" color="#9280FD" shadowColor="#9280FD" background="#9280FD" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="+$12.959,00" percentage="25" />
-    <ProgressTransactions icon="bi bi-arrow-up-right" color="#3C71FC" shadowColor="#3C71FC" background="#3C71FC" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="+$12.959,00" percentage="80" />
+    <ProgressTransactions icon="bi bi-arrow-up-right" color="#3C71FC" shadowColor="#3C71FC" background="#3C71FC" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="-$12.959,00" percentage="80" />
     <ProgressTransactions icon="bi bi-calendar-event" color="#50D3FC" shadowColor="#50D3FC" background="#50D3FC" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="+$12.959,00" percentage="90" />
   </div>
 </template>
@@ -57,7 +57,7 @@ export default {
 <style lang="scss" scoped>
 .infiniteScroll {
     overflow: auto;
-    height:190px;
+    height:220px;
     overflow-x: hidden;
     scrollbar-width: thin;
     scrollbar-color: #aeaeae transparent;

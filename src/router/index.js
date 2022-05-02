@@ -5,6 +5,7 @@ import Settings from '../views/Settings.vue';
 import Cards from '../views/Cards.vue';
 import Send from '../views/Send.vue';
 import Receive from '../views/Receive.vue';
+import Swap from '../views/Swap.vue';
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/receive',
     name: 'Receive',
     component: Receive,
+  },
+  {
+    path: '/swap',
+    name: 'Swap',
+    component: Swap,
   },
 ]
 

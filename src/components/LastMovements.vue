@@ -11,10 +11,10 @@
   </div>
   <div class="infiniteScroll">
     <SingularLastMovement icon="bi bi-arrow-down-left" color="#9280FD" shadowColor="#9280FD" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="+$12.959,00"/>
-    <SingularLastMovement icon="bi bi-arrow-up-right" color="#3C71FC" shadowColor="#3C71FC" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="+$12.959,00"/>
+    <SingularLastMovement icon="bi bi-arrow-up-right" color="#3C71FC" shadowColor="#3C71FC" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="-$12.959,00"/>
     <SingularLastMovement icon="bi bi-calendar-event" color="#50D3FC" shadowColor="#50D3FC" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="+$12.959,00"/>
     <SingularLastMovement icon="bi bi-arrow-down-left" color="#9280FD" shadowColor="#9280FD" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="+$12.959,00"/>
-    <SingularLastMovement icon="bi bi-arrow-up-right" color="#3C71FC" shadowColor="#3C71FC" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="+$12.959,00"/>
+    <SingularLastMovement icon="bi bi-arrow-up-right" color="#3C71FC" shadowColor="#3C71FC" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="-$12.959,00"/>
     <SingularLastMovement icon="bi bi-calendar-event" color="#50D3FC" shadowColor="#50D3FC" movementTitle="Texto de la transacción" movementDate="10 Feb 2022 at 10:20 pm" movementMoney="+$12.959,00"/>
   </div>
 </template>
@@ -51,13 +51,13 @@ export default {
     justify-content: center;
     align-items: center;
     background: linear-gradient(270deg, rgba(46,184,165,1) 0%, rgba(75,207,91,1) 100%);
-    border-radius: 15px;
+    border-radius: 6px;
     padding: 1px;
     .moreLink {
         background: #020201;
         color: #3F4540;
         text-decoration: none;
-        border-radius: 15px;
+        border-radius: 6px;
         padding: 10px;
         transition: .2s;
     

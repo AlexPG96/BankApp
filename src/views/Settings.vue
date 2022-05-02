@@ -3,15 +3,15 @@
         <div class="col-7">
             <h1>Bienvenido a los ajustes</h1>
 
-            <div class="account__section">
+            <div class="accountSection">
                 <p class="title">Cambiar nombre <span v-if="user.displayName">({{ user.displayName }})</span></p>
                 <ChangeName />
             </div>
-            <div class="account__section">
+            <div class="accountSection">
                 <p class="title">Cambiar email <span>({{ user.email }})</span></p>
                 <ChangeEmail />
             </div>
-            <div class="account__section">
+            <div class="accountSection">
                 <p class="title">Cambiar contraseña</p>
                 <ChangePassword />
             </div>
@@ -52,22 +52,24 @@ export default {
 .account {
     h1 {
         margin: 50px 0;
-        text-align: center;
     }
 
-    &__section {
+    .accountSection {
             position: relative;
             padding: 10px;
-            border: 1px solid #16212B;
+            border: 1px solid #3DC480;
+            border-radius: 15px;
             padding-top: 25px;
             margin-top: 40px;
 
+        
         .title {
             position: absolute;
             top: -12px;
-            background-color: #16212B;
-            color: #fff;
+            background-color: #3DC480;
+            color: #3F4540;
             padding: 2px 10px;
+            border-radius: 15px;
         }
     }
 }

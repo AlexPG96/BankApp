@@ -1,5 +1,5 @@
 <template>
-  <form class="ui form change-email" @submit.prevent="onChangeEmail">
+  <form class="change-email" @submit.prevent="onChangeEmail">
       <div class="two fields">
           <div class="field">
               <input type="text" placeholder="Nuevo email" v-model="formData.email" :class="{error: formError.email}">
@@ -9,7 +9,7 @@
           </div>
       </div>
         <p v-if="messageError">{{messageError}}</p>
-        <button type="submit" class="ui button primary" :class="{loading}">Actualizar</button>
+        <button type="submit" class="customBtn" :class="{loading}">Actualizar</button>
     </form>
 </template>
 
@@ -70,17 +70,48 @@ export default {
 
 <style lang="scss" scoped>
 
-.ui.form.change-email {
+.change-email {
     text-align: center;
+
+    input {
+      background-color: #020201;
+      border: 1px solid #3DC480;
+      border-radius: 15px;
+      padding: 10px;
+      margin-bottom: 10px;
+      color: #fff;
+
+      &:placeholder {
+        color: #3F4540;
+      }
+
+      &::-webkit-input-placeholder { 
+        color: #3F4540; 
+      } /* WebKit */
+      &::-moz-placeholder { 
+        color: #3F4540; 
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 .25rem rgba(63, 69, 64, .25);
+      }
+    }
     
     input.error {
         border-color: #faa;
         background-color: #ffeded;
     }
 
-    .ui.button {
-        margin-top: 20px;
+    .customBtn {
+        color: #1B1B1B;
+        background: linear-gradient(270deg, rgba(46,184,165,1) 0%, rgba(75,207,91,1) 100%);
+        border: none;
+        border-radius: 15px;
+        margin-left: 15px;
+        padding: 10px;
+        font-weight: 700;
     }
+
 }
 
 </style>

@@ -33,7 +33,7 @@
                         <span class="item">Receive</span>
                     </div>
                 </router-link>
-                <router-link to="/account" class="containerItem">
+                <router-link to="/swap" class="containerItem">
                     <div class="borderGradient">
                         <i class="me-2 bi bi-arrow-left-right"></i>
                         <span class="item">Swap</span>
@@ -56,13 +56,13 @@
         <div class="row pt-4">
             <div class="col-12 p-3">
                 <div class="ps-5 p-1">
-                    <router-link class="item" to="/account">Deposits</router-link>
+                    <span class="item" to="/">Deposits</span>
                 </div>
                 <div class="ps-5 p-1">
-                    <router-link class="item" to="/account">Loyalty Program</router-link>
+                    <span class="item" to="/">Loyalty Program</span>
                 </div>
                 <div class="ps-5 p-1">
-                    <router-link class="item" to="/account">Loans</router-link>
+                    <span class="item" to="/">Loans</span>
                 </div>
             </div>
         </div>
@@ -70,13 +70,13 @@
         <div class="row">
             <div class="col-12 p-3">
                 <div class="ps-5 p-1">
-                    <router-link class="item" to="/account">Ginko Bank</router-link>
+                    <span class="item" to="/">Ginko Bank</span>
                 </div>
                 <div class="ps-5 p-1">
-                    <router-link class="item" to="/account">2022 Ginkobank Licenes</router-link>
+                    <span class="item" to="/">2022 Ginkobank Licenes</span>
                 </div>
                 <div class="ps-5 p-1">
-                    <router-link class="item" to="/account">#05 From 10.01. 2022</router-link>
+                    <span class="item" to="/">#05 From 10.01. 2022</span>
                 </div>
             </div>
         </div>
