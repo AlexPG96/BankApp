@@ -37,7 +37,7 @@
             </div>
             <div class="col-6">
                 <Select 
-                    :options="months"
+                    :options="fivelastmonths"
                     />
             </div>
         </div>
@@ -75,8 +75,27 @@ export default {
     setup() {
         const store = useStore();
         const user = computed(() => store.state.user);
-
         const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        const fivelastmonths = [];
+
+        const lastMonths = () => {
+            let i;
+            let date = new Date();
+            for (let step = 0; step < 5; step++) {
+                // Se ejecuta 5 veces, con valores del paso 0 al 4.
+                console.log('Camina un paso hacia el este');
+            }
+            let todayMonth = date.getMonth();
+            let month = date.getMonth() - todayMonth;
+            for(let i = 0; i < 5; i++) {
+                let monthNum = month + i;
+                fivelastmonths.push(months[monthNum]);
+            }
+            return fivelastmonths;
+        }
+
+        lastMonths();
+
 
         const logOut = () => {
             auth.signOut();
@@ -86,6 +105,8 @@ export default {
             user,
             logOut,
             months,
+            lastMonths,
+            fivelastmonths
         }
     }
 
